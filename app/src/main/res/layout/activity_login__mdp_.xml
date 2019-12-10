@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Mdp_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/img_auth"
+            android:layout_marginTop="@dimen/_20dp"
+            android:src="@drawable/user_password" />
+
+
+            <EditText
+                android:id="@+id/input_Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginRight="@dimen/_20dp"
+                android:hint="@string/email"
+                android:inputType="textAutoCorrect"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic" />
+
+
+            <EditText
+                android:id="@+id/input_Mdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginRight="@dimen/_20dp"
+                android:hint="@string/mot_de_passe"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="Button_connexion"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_15dp"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:text="@string/connexion"
+                android:id="@+id/B_connx"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/blanc"
+                android:textSize="@dimen/_20dp"
+                android:background="@drawable/custom_button"/>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/memoriser_mes_identifiants"
+                android:id="@+id/R_login_info"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10dp"
+                android:onClick="creer_compte"
+                android:text="@string/creer_un_compte"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

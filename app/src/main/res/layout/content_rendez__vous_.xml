@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Rendez_Vous_Activity"
+    tools:showIn="@layout/app_bar_rendez__vous_">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_15dp"
+        android:layout_marginRight="@dimen/_15dp">
+
+        <EditText
+            android:id="@+id/RV_nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nom"
+            android:layout_marginTop="10dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/RV_prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prenom"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/RV_N_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/numero_de_telephone"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/RV_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"/>
+
+        <Button
+            android:layout_marginTop="@dimen/_10dp"
+            android:id="@+id/RV_envoyer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="B_envoyer"
+            android:text="@string/envoyer"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/blanc"
+            android:textSize="@dimen/_20sp"
+            android:background="@drawable/custom_button"/>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
